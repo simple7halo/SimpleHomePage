@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Contact information about Epic Company, 
+        make reservation for a trip to Epic Wonder Land for your vacation.">
+        <link rel="stylesheet" href="contact.css">
+        <title>Contact Us</title>
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+
+            <header>
+                Contact Information
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="rural.html">Rural Zone</a></li>
+                    <li><a href="urban.html">Urban Zone</a></li>
+                    <li><a href="wild.html">Wild Life</a></li>
+                </ul>
+            </nav>
+
+            <div class="describe">
+
+                <p>
+                    Contact information about Epic Company.
+                </p>
+
+                <div class="contact_info">
+                    <ul>
+                        <li>Phone Number: <br class="contact_indent">XXX-XXX-XXXX</li>
+                        
+                        <li><br>Reservation Call: <br class="contact_indent">XXX-XXX-XXXX</li>
+                        
+                        <li><br>Address: <br class="contact_indent">XXXX ave, XXX st, City, Canada</li>
+                        
+                        <li><br>Postal Code: XXX XXX</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="reservation">
+
+                <p>
+                    Reservation Form:
+                </p>
+
+                <form action="https://formspree.io/uknodream@hotmail.com" method="POST">
+                    <label for="first_name">*First Name: </label>
+                    <input type="text" name="first name" id="first_name">
+                    <br>
+                    <label for="last_name">*Last Name: </label>
+                    <input type="text" name="last name" id="last_name">
+                    <br>
+                    <label for="email">*E-mail: </label>
+                    <input type="text" name="email" id="email">
+                    <br>
+            
+                    <label for="area">*Reserve Zone: </label>
+                    <select name="area" id="area">
+                        <option value="Urban">Urban Zone</option>
+                        <option value="Rural">Rural Zone</option>
+                        <option value="Wild">Wild Live</option>
+                        <option value="All" selected>Whole Island</option>
+                    </select>
+                    <br>
+
+                    <label for="number">*Number of tourists: </label>
+                    <select name="number" id="number">
+                        <option value="1" selected>Single: 1 person</option>
+                        <option value="2">Couple: 2 person</option>
+                        <option value="3-5">Family: 3-5</option>
+                        <option value="6+">Corporation: 6+</option>
+                    </select>
+            
+                    <br>
+                    <label for="extra">Extra Needs: </label>
+                    <textarea name="extra" id="extra"></textarea>
+                    <br>
+                    <button type="reset" id="reset">Reset</button>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+
+            </div>
+
+            <div id="homeLink">
+                <a href="http://mylinux.langara.ca/~qhuang22/">Back to Qian Ting Huang's Home Page</a>
+            </div>
+
+            <footer>
+                <a href="index.html">Back to Main Page</a>
+            </footer>
+
+        </div>
+        
+    </body>
+</html>

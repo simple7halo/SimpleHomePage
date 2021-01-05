@@ -1,0 +1,279 @@
+body{
+    background-color: aqua;
+}
+
+.wrapper{
+    display: grid;
+    grid-template: 
+    'header'    auto
+    'nav'       auto
+    'describe'  auto
+    'gallery'   auto
+    'ref'       auto
+    'footer' auto/
+    1fr;
+}
+
+footer{
+    grid-area:footer;
+    text-align: center;
+    background-color: #850000;
+}
+
+.reference a:link{
+    color: #00FFFF;
+}
+
+.reference a:visited{
+    color: #8A8AFF;
+}
+
+.reference a:active{
+    color: #FFFF00;
+}
+
+footer a:link{
+    color:#00FFFF;
+}
+
+footer a:visited{
+    color:#FFFF00;
+}
+
+footer a:active{
+    color:#00FF00;
+}
+
+nav{
+    grid-area: nav;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+nav a{
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 70%;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 22%;
+    padding: 10px 0;
+    margin: 0;
+    border-style: solid;
+    border-width: 5px;
+    background-color: rgb(255, 115, 64);
+}
+
+.gallery{
+    background-color: #FFE1AA;
+    grid-area: gallery;
+    border-style: solid;
+    display: none;
+}
+
+.reference{
+    margin-top: 5px;
+    grid-area: ref;
+    background-color: black;
+    text-align: center;
+}
+
+.small-images{
+    padding-bottom: 5px;
+    text-align: center;
+    display: grid;
+    grid-gap: 0;
+    grid-template: 
+    'previous first second third next' 155px/
+    0.5fr 0.5fr 1fr 0.5fr 0.5fr;
+}
+
+.small-image{   
+    display: none;
+    padding: 0;
+    text-align: center;
+}
+
+.small-image img{
+   width: 100%;
+}
+
+.button{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.left{
+    grid-area: previous;
+}
+
+.right{
+    grid-area: next;
+}
+
+.first{
+    grid-area: first;
+    display: inline-block;
+}
+
+.first img{
+    height: 90px;
+}
+
+.second{
+    grid-area: second;
+    display: inline-block;
+    border-style: solid;
+}
+
+.second img{
+    height: 150px;
+}
+
+.third{
+    grid-area: third;
+    display: inline-block;
+    text-align: right;
+}
+
+.third img{
+    height: 90px;
+}
+
+.big-image{
+    text-align: center;
+}
+
+.gallery .big-image img{
+    width: 100%;
+}
+
+.describe{
+    grid-area: describe;
+    background-color: #FFE1AA;
+}
+
+.describe figure{
+    float: left;
+    margin-top: 1em;
+}
+
+.describe figcaption{
+    text-align: center;
+}
+
+.describe p{
+    font-size: 1.3em;
+    margin-top: 1em;
+    color: #620000;
+    font-family: Lucida Sans Unicode, Times New Roman, Arial, Calibri, Candara, Sans-serif;
+}
+
+header{
+    font-family: Stencil Std, Times New Roman, Lucida Sans Unicode, serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3em;
+    grid-area: header;
+    color: #7A2500;
+}
+
+@media(max-width: 1024px){
+    nav ul li{
+        width: 21%;
+    }
+}
+
+@media(max-width: 810px){
+    .wrapper{
+        grid-template:
+        'header header' auto
+        'nav describe' auto
+        'gallery gallery' auto
+        'ref ref'      auto
+        'footer footer' auto/
+        200px 1fr;
+    }
+
+    .small-images{
+        grid-template: 
+        'previous first second third next' 105px/
+        0.5fr 0.5fr 1fr 0.5fr 0.5fr;
+    }
+
+    .first img{
+        height: 70px;
+    }
+
+    .second img{
+        height: 100px;
+    }
+
+    .third img{
+        height: 70px;
+    }
+
+    nav{
+        margin:0 5px;
+        font-size: 1em;
+    }
+
+    nav ul{
+        display: block;
+        width: 100%;
+    }
+
+    nav ul li{
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    header{
+        margin-bottom: 10px;
+        font-size: 2.5em;
+    }
+
+    .describe{
+        margin-left: 1em;
+    }
+
+    .describe p{
+        font-size: 1em;
+    }
+
+    .describe figure{
+        text-align: center;
+        float: none;
+    }
+}
+
+@media(max-width: 600px){
+    .wrapper{
+        grid-template:
+        'header header' auto
+        'nav describe' auto
+        'ref ref' auto
+        'footer footer' auto/
+        120px 1fr;
+    }
+
+    .gallery{
+        display: none;
+    }
+
+    .describe figure{
+        display: none;
+    }
+}

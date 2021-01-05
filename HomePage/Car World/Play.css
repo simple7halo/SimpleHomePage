@@ -1,0 +1,18 @@
+h1{
+	display:inline;
+	color: red;
+}
+
+h2{
+	display:inline;
+	color:white;
+}
+
+p{
+	display:inline;
+	color:white;
+}
+body{
+	margin-left:20%;
+	background-color:black;
+	}

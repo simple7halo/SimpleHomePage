@@ -1,0 +1,179 @@
+body{
+    background-color: aqua;
+}
+
+.wrapper{
+    display: grid;
+    grid-template: 
+    'header'    auto
+    'nav'       auto
+    'describe'  auto
+    'footer'    auto/
+    1fr;
+}
+
+footer{
+    grid-area:footer;
+    text-align: center;
+    background-color: #850000;
+}
+
+footer a:link{
+    color:#00FFFF;
+}
+
+footer a:visited{
+    color:#FFFF00;
+}
+
+footer a:active{
+    color:#00FF00;
+}
+
+nav{
+    grid-area: nav;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+nav a{
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 70%;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 22%;
+    padding: 10px 0;
+    margin: 0;
+    border-style: solid;
+    border-width: 5px;
+    background-color: rgb(255, 115, 64);
+}
+
+.describe{
+    grid-area: describe;
+    background-color: #FFE1AA;
+}
+
+.describe .big-image {
+    text-align: center;
+    display: none;
+}
+
+.describe .big-image img{
+    width: 100%;
+}
+
+.describe .small-image{
+    float: left;
+    margin-top: 1em;
+}
+
+.describe .small-image figcaption{
+    text-align: center;
+}
+
+.describe p{
+    font-size: 1.3em;
+    margin-top: 1em;
+    color: #620000;
+    font-family: Lucida Sans Unicode, Times New Roman, Arial, Calibri, Candara, Sans-serif;
+}
+
+.describe .instruction {
+    display: none;
+    font-size: 1em;
+}
+
+header{
+    font-family: Stencil Std, Times New Roman, Lucida Sans Unicode, serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3em;
+    grid-area: header;
+    color: #7A2500;
+}
+
+@media(max-width: 1024px){
+    nav ul li{
+        width: 21%;
+    }
+}
+
+@media(max-width: 810px){
+    .wrapper{
+        grid-template:
+        'header header' auto
+        'nav describe' auto
+        'footer footer' auto/
+        200px 1fr;
+    }
+
+    nav{
+        margin:0 5px;
+        font-size: 1em;
+    }
+
+    nav ul{
+        display: block;
+        width: 100%;
+    }
+
+    nav ul li{
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    header{
+        margin-bottom: 10px;
+        font-size: 2.5em;
+    }
+
+    .describe{
+        margin-left: 1em;
+    }
+
+    .describe p{
+        font-size: 1em;
+    }
+
+    .describe .small-image {
+        text-align: center;
+        float: none;
+    }
+
+    .describe .big-image {
+        display: none;
+    }
+
+    .describe .instruction {
+        display: none;
+    }
+}
+
+@media(max-width: 650px){
+    .wrapper{
+        grid-template:
+        'header header' auto
+        'nav describe' auto
+        'footer footer' auto/
+        120px 1fr;
+    }
+
+    .describe figure{
+        display: none;
+    }
+
+}

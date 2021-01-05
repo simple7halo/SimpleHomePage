@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Epic Wonder Land, good place to travel, 
+        take vacation.">
+        <link rel="stylesheet" href="index.css">
+        <script src="script/jquery-3.3.1.min.js"></script>
+        <script src="script/index.js"></script>
+        <title>Epic Wonder Land</title>
+    </head>
+
+    <body onload="setup()" onresize="mediaQ()">
+
+        <div class="wrapper">
+
+            <header>
+                Epic Wonder Land
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="rural.html">Rural Zone</a></li>
+                    <li><a href="urban.html">Urban Zone</a></li>
+                    <li><a href="wild.html">Wild Life</a></li>
+                </ul>
+            </nav>
+
+            <div class="describe">
+                <figure class="big-image">
+                    <figcaption>
+                        *Click on the image to close larger size view.
+                    </figcaption>
+                    <img onclick="hideBig()" src="image/island-top-view/island-top-1024.jpg" alt="An island that contains four different zones">
+                </figure>
+
+                <figure class="small-image">
+                    <img onclick="showBig()" src="image/island-top-view/island-top-thumb.jpg" alt="An island that contains four different zones">
+                    <figcaption>
+                        <a href="island-top.html">Photoshoped image click for original resources</a>
+                    </figcaption>
+                </figure>
+                
+                <p>
+                    Epic Wonder Land is an island that contains four different zones.
+                </p>
+                <p>
+                    Footer link on every page can direct to contact page where you can make reservation.
+                </p>
+                <p class="instruction">
+                    *Click on the image to open larger size view.
+                </p>
+            </div>
+
+            <footer>
+                <a href="contact.html">Make Reservation</a>
+            </footer>
+
+        </div>
+
+    </body>
+</html>

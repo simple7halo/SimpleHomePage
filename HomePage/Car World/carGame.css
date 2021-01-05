@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+body{
+	background-image:url(./img/car.jpg);
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	background-color:black;
+	height:950px;
+}
+h1{
+	text-align:center;
+	color:white;
+}
+#instructions{
+	margin-left:50%;
+	margin-top:400px;
+	padding:10px 30px;
+	color:black;
+	background-color:blue;
+	padding:10px 30px;
+	font-size:1.5em;
+	font-weight:bold;
+	font-family:Impact,fantasy;
+}
+#HOME{
+	margin-left:15%;
+	padding:10px 30px;
+	color:black;
+	background-color:blue;
+	padding:10px 30px;
+	font-size:1.5em;
+	font-weight:bold;
+	font-family:Impact,fantasy;
+}
+#play{
+	margin-left:47%;
+	margin-top:20px;
+	color:black;
+	background-color:blue;
+	padding:10px 30px;
+	font-size:1.5em;
+	font-weight:bold;
+	font-family:Impact,fantasy;
+}
+#instplay{
+	margin-top:25%;
+	margin-left:47%;
+	color:black;
+	background-color:blue;
+	padding:10px 30px;
+	font-size:1.5em;
+	font-weight:bold;
+	font-family:Impact,fantasy;}
+#play:hover{
+	color:orangered;
+	background-color:white;
+}
+#instructions:hover{
+	color:orangered;
+	background-color:white;
+}
+#HOME:hover{
+	color:orangered;
+	background-color:white;
+}
+#wrapper{	
+	background-image:url(./img/instcar.jpg);
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	height:950px;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+.text {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+}
+

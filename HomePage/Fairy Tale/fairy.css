@@ -1,0 +1,109 @@
+nav {
+	font-family: Segoe Print, Segoe Script, Ink Free, MV Boli, Times New Roman, Cooper Std Black, Serif;
+	text-align: center;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+nav.botLink{
+	font-size: 20px;
+	text-align: right;
+}
+
+.multiImg {
+	display: inline-block;
+	width: 20%;
+}
+
+figure img{
+	width:10em;
+}
+
+figcaption {
+	margin: 0;
+	width: 100%;
+	display: inline-block;
+}
+
+.wrapper{
+	background-color: #C7C7C7;
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+	padding-bottom: 30px;
+}
+
+.story {
+	text-indent: 35px;
+	font-family: Serif;
+	font-weight: bold;
+}
+
+.end {
+	font-family: Ink Free, MV Boli, Segoe Script, Times New Roman, Cooper Std Black, Serif;
+	font-style: italic;
+	text-align: center;
+	font-size: 35px;
+}
+
+p {
+	color: #000014;
+}
+
+body {
+	background-color: #ff9900;
+}
+
+h1 {
+	text-align: center;
+	font-family: Segoe Script, MV Boli, Ink Free, Times New Roman, Cooper Std Black, Serif;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+header {
+	text-align: center;
+	font-family: Segoe Script, MV Boli, Ink Free, Times New Roman, Cooper Std Black, Serif;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+h3 {
+	font-family: MV Boli, Segoe Script, Ink Free, Times New Roman, Cooper Std Black, Serif;
+	font-weight: bold;
+	font-size: 27px;
+}
+
+h3.refList{
+	font-size: 18px;
+}
+
+h5 {
+	font-family: Mongolian Baiti, Times New Roman, Cooper Std Black, Serif;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+h5.refList{
+	font-size: 14px;
+	text-indent: 70px;
+}
+
+.links{
+	font-weight: normal;
+	padding-left: 10px;
+}
+
+ul {
+	padding-left: 120px;
+	list-style-type: circle;
+}
+
+.titleName {
+	font-weight: normal;
+}
+
+.excerpt {
+	font-weight: normal;
+	text-indent: 35px;
+}

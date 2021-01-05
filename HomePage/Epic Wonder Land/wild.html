@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Explore various wild lives in this area of 
+        Epic Wonder Land, numerous species.">
+        <link rel="stylesheet" href="wild.css">
+        <script src="script/jquery-3.3.1.min.js"></script>
+        <script src="script/wild.js"></script>
+        <title>Explore Various Wild Lives</title>
+    </head>
+
+    <body onload="setup()" onresize="mediaQ()">
+
+        <div class="wrapper">
+
+            <header>
+                Explore Various Wild Lives
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="rural.html">Rural Zone</a></li>
+                    <li><a href="urban.html">Urban Zone</a></li>
+                    <li><a href="wild.html">Wild Life</a></li>
+                </ul>
+            </nav>
+
+            <div class="describe">
+
+                <figure>
+                    <img src="image/island-top-view/wild-thumb.jpg" alt="a image of the wild life zone of the island, looks like a forest">
+                    <figcaption>
+                        Wild life of island                      
+                    </figcaption>
+                </figure>
+
+                <p>
+                    This is the main page of the Wild Life Zone of the island.
+                    Within this zone contains various species of wild life for
+                    tourists to view and take pictures.
+                </p>
+            </div>
+
+            <div class="gallery">
+
+                <figure class="big-image">
+                    <img src="image/animal/lion-high.jpg" alt="image of a lion">
+                </figure>
+
+                <div class="small-images">
+                    
+                    <button class="button left" onclick="go_left()">
+                        &lt;&lt;&lt;
+                    </button>
+
+                    <button class="button right" onclick="go_right()">
+                        >>>
+                    </button>
+
+                    <div class="small-image second" id="lion">
+                        <img src="image/animal/lion-thumb.jpg" alt="image of a lion">
+                    </div>
+
+                    <div class="small-image third" id="horse">
+                        <img src="image/animal/horse-thumb.jpg" alt="image of a horse">      
+                    </div>
+
+                    <div class="small-image" id="butter">
+                        <img src="image/animal/butter-thumb.jpg" alt="image of a butterfly">
+                    </div>
+
+                    <div class="small-image" id="tiger">
+                        <img src="image/animal/tiger-thumb.jpg" alt="image of a tiger">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="reference">
+                <a href="animal-ref.html">Click for image resources</a>
+            </div>
+
+            <footer>
+                <a href="contact.html">Make Reservation</a>
+            </footer>
+
+        </div>
+        
+    </body>
+</html>
